@@ -49,6 +49,10 @@ main {
         div {
             width: 98%;
             font-weight: 600;
+
+            p a {
+                color: inherit;
+            }
         }
     }
 }

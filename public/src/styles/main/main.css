@@ -45,4 +45,7 @@ main section article button img:hover {
 main section div {
   width: 98%;
   font-weight: 600;
+}
+main section div p a {
+  color: inherit;
 }/*# sourceMappingURL=main.css.map */

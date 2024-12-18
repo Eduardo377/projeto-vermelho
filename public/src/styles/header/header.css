@@ -29,6 +29,9 @@ header nav li {
   color: var(--v-blue-primary-color);
   transition: color 0.3s ease;
 }
+header nav li a {
+  color: inherit;
+}
 header nav li:hover {
   font-weight: 700;
 }/*# sourceMappingURL=header.css.map */

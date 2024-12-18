@@ -31,6 +31,10 @@ header {
         li {
             color: var(--v-blue-primary-color);
             transition: color 0.3s ease;
+
+            a {
+                color: inherit;
+            }
         }
 
         li:hover {
