@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --v-primary-color: #fff;
+    --v-secondary-color: #000;
+    --v-grey-primary-color: #5B5B5B;
+    --v-grey-secondary-color: #D8D8D8;
+    --v-blue-primary-color: #0016DF;
+    --v-blue-secondary-color: #0017E9;
+    --v-blue-tertiary-color: #001C43.;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
