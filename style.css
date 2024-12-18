@@ -26,6 +26,13 @@ body a {
 body button {
   cursor: pointer;
 }
+body canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 header {
   display: flex;
@@ -66,12 +73,6 @@ header nav li:hover {
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 main {
   height: 100vh;
   background-image: url(./public/assets/the\ witcher\ kavil2.png);
@@ -125,10 +126,30 @@ main section div p a {
   color: inherit;
 }
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  nav, ul {
+    min-width: 90%;
+    text-align: center;
+  }
+  main {
+    height: 100vh;
+    background-image: url(./public/assets/the\ witcher\ kavil2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
