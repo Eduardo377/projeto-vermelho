@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --v-primary-color: #fff;
+    --v-primary-color: #ffffff;
     --v-secondary-color: #000;
     --v-grey-primary-color: #5B5B5B;
     --v-grey-secondary-color: #D8D8D8;
@@ -15,17 +14,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", serif;
 }
 
-ul {
-    list-style: none;
-}
+body {
+    background-image: url(../../assets/the\ witcher\ hell.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--v-primary-color);
 
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
+    ul {
+            list-style: none;
+    }
 
-button{
-    cursor: pointer;
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    button{
+        cursor: pointer;
+    }
 }
