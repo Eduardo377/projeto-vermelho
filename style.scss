@@ -96,7 +96,7 @@ header {
         }
         
         button:hover {
-            border: 2px solid var(--v-yellow-primary-color);
+            border: 3px solid var(--v-yellow-primary-color);
             background-color: var(--v-gray-secudary-color);
             transition: scale(1.1);
             z-index: 1;
@@ -186,9 +186,15 @@ main {
                 width: 16rem;
                 border: none;
                 overflow: hidden;
-                border-radius: 9%;
+                border-radius: 0.9em;
                 transform: scale(1);
                 transition: color transform 0.3s ease-in-out;
+                
+                button:hover img {
+                    transform: scale(1.1);
+                    z-index: 1;
+                    transition: transform 0.3s ease;
+                }
                 
                 img {
                     width: 100%;
@@ -199,17 +205,11 @@ main {
                 }
 
                 img:hover {
-                    border-radius: 9%;
-                    border: 2px solid var(--v-yellow-primary-color);
+                    border-radius: 0.9em;
+                    border: 3px solid var(--v-yellow-primary-color);
                     z-index: 1;
                     transition: scale(1.1);
-
                 }
-            }
-
-            button:hover img {
-                transition: scale(1.1);
-                z-index: 1;
             }
         }
 
@@ -234,7 +234,7 @@ main {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 728px) {
 
     body {
         background-position: bottom;
@@ -315,7 +315,6 @@ main {
 
         .logo {
             flex-wrap: wrap;
-            flex: 1;
             margin: 0;
             
             figure {
@@ -341,7 +340,6 @@ main {
         main {
             background-size: 70%;
             z-index: -999999;
-
 
             section {
                 .apresentacao {

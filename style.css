@@ -87,7 +87,7 @@ header .logo .music-controls button {
   transition: transform 0.3s ease-in-out;
 }
 header .logo .music-controls button:hover {
-  border: 2px solid var(--v-yellow-primary-color);
+  border: 3px solid var(--v-yellow-primary-color);
   background-color: var(--v-gray-secudary-color);
   transition: scale(1.1);
   z-index: 1;
@@ -165,9 +165,14 @@ main section .apresentacao button {
   width: 16rem;
   border: none;
   overflow: hidden;
-  border-radius: 9%;
+  border-radius: 0.9em;
   transform: scale(1);
   transition: color transform 0.3s ease-in-out;
+}
+main section .apresentacao button button:hover img {
+  transform: scale(1.1);
+  z-index: 1;
+  transition: transform 0.3s ease;
 }
 main section .apresentacao button img {
   width: 100%;
@@ -178,14 +183,10 @@ main section .apresentacao button img {
   transform: scale(1);
 }
 main section .apresentacao button img:hover {
-  border-radius: 9%;
-  border: 2px solid var(--v-yellow-primary-color);
+  border-radius: 0.9em;
+  border: 3px solid var(--v-yellow-primary-color);
   z-index: 1;
   transition: scale(1.1);
-}
-main section .apresentacao button:hover img {
-  transition: scale(1.1);
-  z-index: 1;
 }
 main section article {
   width: 100%;
@@ -201,7 +202,7 @@ main section article div p a {
   color: var(--v-primary-color);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 728px) {
   body {
     background-position: bottom;
   }
@@ -267,7 +268,6 @@ main section article div p a {
   }
   body .logo {
     flex-wrap: wrap;
-    flex: 1;
     margin: 0;
   }
   body .logo figure img {

@@ -4,6 +4,17 @@ const ctx = canvas.getContext('2d');
 const audio = document.getElementById('theme-music');
 const toggleMusicButton = document.getElementById('toggle-music');
 
+const hoverSound = new Audio('./public/sounds/hover-sound.mp3');
+
+const buttons = document.querySelectorAll('#hover-sound');
+
+buttons.forEach((button) => {
+    button.addEventListener('mouseover', () => {
+        hoverSound.currentTime = 0;
+        hoverSound.play();
+    });
+});
+
 audio.addEventListener('canplay', () => {
     toggleMusicButton.disabled = false;
 });
