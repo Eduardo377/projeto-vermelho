@@ -5,8 +5,16 @@ const audio = document.getElementById('theme-music');
 const toggleMusicButton = document.getElementById('toggle-music');
 
 const hoverSound = new Audio('./public/sounds/hover-sound.mp3');
+const swordSound = new Audio('./public/sounds/draw-sword.mp3');
 
-const buttons = document.querySelectorAll('#hover-sound');
+const buttons = document.querySelectorAll('.hover-sound');
+
+const swordButton = document.getElementById('swordShow');
+
+swordButton.addEventListener('click', () => {
+    swordSound.currentTime = 0;
+    swordSound.play();
+});
 
 buttons.forEach((button) => {
     button.addEventListener('mouseover', () => {
