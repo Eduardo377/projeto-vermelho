@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --v-primary-color: #ffffff;
+  --v-secudary-color: #000000;
+  --v-yellow-primary-color: #f7f305;
+  --v-gray-primary-color: #333333;
+  --v-gray-secudary-color: #555555;
 }
 
 * {
@@ -11,10 +15,12 @@
 }
 
 body {
-  background-image: url(./public/assets/the\ witcher\ hell.png);
+  background-color: var(--v-secudary-color);
+  background-image: url(./public/assets/background-fire-desktop1.gif);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--v-primary-color);
+  z-index: -3;
 }
 body ul {
   list-style: none;
@@ -32,6 +38,7 @@ body canvas {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 header {
@@ -41,13 +48,42 @@ header {
   font-style: normal;
   text-transform: uppercase;
   font-weight: 400;
+  padding: 1rem;
 }
-header figure {
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+header .logo figure {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
-  width: 30%;
+  gap: 1rem;
+}
+header .logo figure figcaption {
+  transition: color 0.3s ease;
+  margin-right: 0.5rem;
+}
+header .logo figure figcaption:hover {
+  font-weight: 700;
+}
+header .logo .music-controls {
+  width: 10%;
+}
+header .logo .music-controls button {
+  background-color: var(--v-gray-primary-color);
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+}
+header .logo .music-controls button:hover {
+  border: 2px solid var(--v-yellow-primary-color);
+  background-color: var(--v-gray-secudary-color);
+}
+header .logo .music-controls button:hover img {
+  transition: transform 0.3s ease;
+  transition: scale(1.1);
 }
 header nav {
   display: flex;
@@ -79,6 +115,7 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  z-index: 1;
 }
 main section {
   height: 100vh;
@@ -87,7 +124,7 @@ main section {
   align-items: center;
   justify-content: center;
 }
-main section article {
+main section .apresentacao {
   height: 92vh;
   width: 27.125rem;
   display: flex;
@@ -96,60 +133,95 @@ main section article {
   justify-content: center;
   padding-top: 15rem;
 }
-main section article img {
+main section .apresentacao img {
   width: 24rem;
 }
-main section article button {
+main section .apresentacao button {
   margin-top: 2.2rem;
   width: 16rem;
   border: none;
   overflow: hidden;
   border-radius: 9%;
-  z-index: 1;
 }
-main section article button img {
+main section .apresentacao button img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: color 0.3s ease;
 }
-main section article button img:hover {
+main section .apresentacao button img:hover {
   border-radius: 9%;
-  border: 2px solid #f7f305;
+  border: 2px solid var(--v-yellow-primary-color);
 }
-main section div {
-  width: 98%;
+main section .apresentacao button:hover img {
+  transition: scale(1.1);
+  transition: transform 0.3s ease;
+}
+main section article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main section article div {
+  width: 70%;
   font-weight: 600;
+  padding: 1rem;
 }
-main section div p a {
-  color: inherit;
+main section article div p a {
+  color: var(--v-primary-color);
 }
 
 @media (max-width: 768px) {
-  header {
+  body {
+    background-image: url(./public/assets/background-fire-desktop2.gif);
+    background-size: contain;
+    background-position: bottom;
+  }
+  body header {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
-  nav {
+  body header .logo {
+    width: 100%;
+    justify-content: center;
+  }
+  body header .logo figcaption {
+    border: var(--v-primary-color) solid 1px;
+    margin-right: 2rem;
+    padding: 1rem;
+  }
+  body header .logo .music-controls {
+    width: 20%;
+    justify-content: center;
+  }
+  body nav {
+    padding: 1.5rem;
+  }
+  body nav, body ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-  }
-  nav, ul {
     min-width: 90%;
     text-align: center;
   }
-  main {
+  body main {
     height: 100vh;
     background-image: url(./public/assets/the\ witcher\ kavil2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
   }
-  p {
+  body article div {
+    min-width: 100%;
+    text-align: center;
+  }
+  body article p {
     font-size: 0.8rem;
     text-align: center;
+  }
+  body article p a {
+    color: var(--v-primary-color);
   }
 }/*# sourceMappingURL=style.css.map */

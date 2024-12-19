@@ -12,10 +12,16 @@
 
     <body>
         <header>
-            <figure>
-                <img src="./public/assets/witcher simbol.png" alt="Simbolo The Witcher 3">
-                <figcaption>projeto vermelho</figcaption>
-            </figure>
+            <div class="logo">
+                <figure>
+                    <img src="./public/assets/witcher simbol.png" alt="Simbolo The Witcher 3">
+                    <figcaption>projeto vermelho</figcaption>
+                </figure>
+                <div class="music-controls">
+                    <audio id="theme-music" src="./public/assets/TW3.mp3" autoplay loop ></audio>
+                    <button id="toggle-music" aria-label="Ativar/Desativar música de fundo">🔊</button>
+                </div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#">universo</a></li>
@@ -27,26 +33,29 @@
         </header>
         <main>
             <section>
-                <article>
+                <article class="apresentacao">
                     <img src="./public/assets/the witcher.jpeg.png"
                         alt="Nome do jogo The Witcher 3: Wild Hunt com simbolo e estilização">
                     <button type="button">
-                        <a href="https://youtu.be/66E_GxCMMek?si=bIrkecu9tijHlf1q" rel="noopener noreferrer">
+                        <a href="#" rel="noopener noreferrer">
                             <img src="./public/assets/botão.svg" alt="Botão de assista agora">
                         </a>
                     </button>
                 </article>
-                <div>
-                    <p>
-                        Layout produzido por Vai na Web para fins exclusivamente educacionais.
-                    </p>
-                    <p>
+                <article>
+                    <div>
+                        <p>
+                            Layout produzido por Vai na Web para fins exclusivamente educacionais.
+                        </p>
+                        <p>
                         Referência: <a href="https://cutt.ly/gjP0Ba6" target="_blank"
                             rel="noopener noreferrer">https://cutt.ly/gjP0Ba6</a>
-                    </p>
-                </div>
+                        </p>
+                    </div>
+                </article>
             </section>
             <canvas id="fireCanvas"></canvas>
+            <audio src="./public/assets/click1.mp3" id=""></audio>
         </main>
     </body>
     <script src="script.js" defer></script>
