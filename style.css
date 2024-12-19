@@ -16,7 +16,7 @@
 
 body {
   background-color: var(--v-secudary-color);
-  background-image: url(./public/assets/background-fire-desktop2.gif);
+  background-image: url(./public/assets/background-flame.gif);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--v-primary-color);
@@ -174,8 +174,6 @@ main section article div p a {
 
 @media (max-width: 768px) {
   body {
-    background-image: url(./public/assets/background-fire-desktop2.gif);
-    background-size: contain;
     background-position: bottom;
   }
   body header {
