@@ -18,7 +18,7 @@
 
 body {
     background-color: var(--v-secudary-color);
-    background-image: url(./public/assets/background-fire-desktop1.gif);
+    background-image: url(./public/assets/background-fire-desktop.gif);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--v-primary-color);
@@ -207,7 +207,7 @@ main {
 @media (max-width: 768px) {
 
     body {
-        background-image: url(./public/assets/background-fire-desktop2.gif);
+        background-image: url(./public/assets/background-fire-desktop.gif);
         background-size: contain;
         background-position: bottom;
         
