@@ -201,7 +201,7 @@ main section article div p a {
   color: var(--v-primary-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   body {
     background-position: bottom;
   }
@@ -253,5 +253,45 @@ main section article div p a {
   }
   body article p a {
     color: var(--v-primary-color);
+  }
+}
+@media (max-width: 200px) {
+  * {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    z-index: -9999999;
+  }
+  body .logo {
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 0;
+  }
+  body .logo figure img {
+    height: 10%;
+    width: 10%;
+  }
+  body .logo figure figcaption {
+    padding: 0;
+    border: none;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  body nav {
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  body main {
+    background-size: 70%;
+    z-index: -999999;
+  }
+  body main section .apresentacao img {
+    height: 10%;
+    width: 10%;
+    z-index: -99999;
   }
 }/*# sourceMappingURL=style.css.map */
