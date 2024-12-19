@@ -174,7 +174,7 @@ main section article div p a {
 
 @media (max-width: 768px) {
   body {
-    background-image: url(./public/assets/background-fire-desktop.gif);
+    background-image: url(./public/assets/background-fire-desktop2.gif);
     background-size: contain;
     background-position: bottom;
   }
