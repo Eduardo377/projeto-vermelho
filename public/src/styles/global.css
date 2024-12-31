@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --v-primary-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+body {
+  background-image: url(../../assets/the\ witcher\ hell.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--v-primary-color);
+}
+body ul {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+  cursor: pointer;
+}
+body button {
+  cursor: pointer;
+}/*# sourceMappingURL=global.css.map */

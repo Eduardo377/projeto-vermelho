@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+
+
+    figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        width: 30%;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            flex: 1;
+        }
+
+        li {
+            color: var(--v-blue-primary-color);
+            transition: color 0.3s ease;
+
+            a {
+                color: inherit;
+            }
+        }
+
+        li:hover {
+            font-weight: 700;
+        }
+    }
+
+}
